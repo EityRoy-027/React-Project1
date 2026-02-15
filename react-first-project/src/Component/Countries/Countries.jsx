@@ -1,11 +1,15 @@
 import React, { use } from 'react';
 
 const Countries = ({ countriesPromise}) => {
-    const countries = use(countriesPromise)
+    const countriesData = use(countriesPromise)
+    const countries = countriesData.countries;
+
     console.log(countries);
     return (
         <div>
-            
+
+           <h1>In the contries : {countries.length}</h1>
+
         </div>
     );
 };
