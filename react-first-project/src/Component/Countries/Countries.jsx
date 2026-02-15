@@ -16,6 +16,7 @@ const Countries = ({ countriesPromise}) => {
         //to show visited country numbers
         const totalvisitedCountries= [...visitedCountries,country];
         setVisitedCountries(totalvisitedCountries);
+        console.log(visitedCountries);
     }
 
     console.log(countries);
@@ -23,8 +24,13 @@ const Countries = ({ countriesPromise}) => {
         <div className>
 
            <h1>In the contries : {countries.length}</h1>
-           <h3>Visited Countries: </h3>
-
+           <h3>Visited Countries:{visitedCountries.length} </h3>
+        
+        <ol>
+            {
+                visitedCountries.map( country => <li key={country.cca3}>{country.name.common}</li>)
+            }
+        </ol>
            <div className='Countries'>
         {
             countries.map( country => <Country 

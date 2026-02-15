@@ -7,7 +7,7 @@ const Country = ({country , handleVisitedCountries }) => {
     const [ visited , setVisited] = useState( false );
 
     const handleVisited = () =>{
-      setVisited( true )
+      // setVisited( true )
     
     //when click>1
 
