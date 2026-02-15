@@ -12,6 +12,10 @@ const Countries = ({ countriesPromise}) => {
      const handleVisitedCountries = (country) => {
        
         console.log('Visited country clicked', country);
+
+        //to show visited country numbers
+        const totalvisitedCountries= [...visitedCountries,country];
+        setVisitedCountries(totalvisitedCountries);
     }
 
     console.log(countries);
