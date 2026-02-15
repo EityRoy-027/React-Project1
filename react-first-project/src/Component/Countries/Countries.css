@@ -3,3 +3,12 @@
     grid-template-columns: repeat(3,1fr);
     gap:20px;
 }
+h3{
+    padding-Left:20px;
+}
+.flagdiv{
+    display: flex;
+    gap:10px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
