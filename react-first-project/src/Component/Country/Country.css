@@ -29,4 +29,6 @@ gap:10px;
     background-Color: silver;
     font-Weight:bold;
      padding:"5px";
+     font-size: 0.85rem;
+     border: 1px solid grey;
 }

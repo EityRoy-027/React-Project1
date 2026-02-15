@@ -52,7 +52,7 @@ const Country = ({country , handleVisitedCountries }) => {
                 {visited  ? "Visited" : "Not Visited" }
                 </button>
 
-                <button className='visitedbtn'>Add Visited Flag</button>
+                <button className='visitedbtn' style={{width:"130px", padding:"10px"}}>Add Visited Flag</button>
                 </div>
         </div>
     );
