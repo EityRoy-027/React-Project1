@@ -28,7 +28,7 @@ const Country = ({country}) => {
     }
 
     return (
-        <div className='Country'>
+          <div className={`Country $ {visited && 'country-visited'}`}> 
             <img style={{height:'150px', width:'150px'}} src={country.flags.flags.png} alt={country.flags.flags.alt} />
             <h2>Name:{country.name.common}</h2>
             <p>Capital: {country.capital.capital}</p>
